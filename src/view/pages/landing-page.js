@@ -1,6 +1,5 @@
 import LandingPageListLeft from '../components/landing-page/landing-page-left-menu';
 import CodeEditor from '../components/code-editor';
-import { productController } from '../../controllers';
 
 export default function() {
   return {

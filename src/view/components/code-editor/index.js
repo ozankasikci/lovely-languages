@@ -1,9 +1,9 @@
 import './styles.scss';
 import 'ace-builds';
 import 'ace-builds/webpack-resolver';
-import { toJS } from 'mobx';
 import { languages } from '../../../stores/language-store';
 import { algorithms } from '../../../stores/algorithm-store';
+import CodeSnippet from '../code-snippet';
 
 export default function () {
   return {
@@ -12,7 +12,7 @@ export default function () {
         <div className="uk-child-width-1-2@m" uk-grid>
           { languages.map((language, i) => {
             const id = `editor-${language.extension}`;
-            return (<div key={i} id={id}>editor</div>);
+            return (<CodeSnippet languageName={language.name} selector={id} i={i}/>) ;
           }) }
         </div>
       );
