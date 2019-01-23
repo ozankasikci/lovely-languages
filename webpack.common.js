@@ -51,7 +51,7 @@ module.exports = {
       }],
     },
     {
-      test: /\.(txt|cpp|go)$/,
+      test: /\.(txt|cpp|go|py|java|php|sh|ml)$/,
       use: 'raw-loader',
     }],
   },

@@ -11,6 +11,21 @@ const languages = [
     extension: 'cpp',
     aceMode: 'c_cpp',
   },
+  {
+    name: 'GO',
+    extension: 'go',
+    aceMode: 'golang',
+  },
+  {
+    name: 'Python',
+    extension: 'py',
+    aceMode: 'python',
+  },
+  {
+    name: 'Java',
+    extension: 'java',
+    aceMode: 'java',
+  },
 ];
 
 class LanguageStore {
