@@ -1,7 +1,18 @@
 import { observable, autorun, computed, action } from 'mobx';
 
-class LanguageStore {
-  @observable languages = ['Javascript'];
+const languages = [
+  {
+    name: 'Javascript',
+    extension: 'txt',
+  },
+  {
+    name: 'C++',
+    extension: 'cpp',
+  },
+];
+
+class CodeEditorStore {
+  @observable languages = languages;
   @observable pendingRequests = 0;
 
   constructor() {
@@ -26,4 +37,5 @@ class LanguageStore {
   }
 }
 
-export default LanguageStore;
+export { languages };
+export default CodeEditorStore;
