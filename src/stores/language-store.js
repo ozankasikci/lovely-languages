@@ -4,14 +4,16 @@ const languages = [
   {
     name: 'Javascript',
     extension: 'txt',
+    aceMode: 'javascript',
   },
   {
     name: 'C++',
     extension: 'cpp',
+    aceMode: 'c_cpp',
   },
 ];
 
-class CodeEditorStore {
+class LanguageStore {
   @observable languages = languages;
   @observable pendingRequests = 0;
 
@@ -38,4 +40,4 @@ class CodeEditorStore {
 }
 
 export { languages };
-export default CodeEditorStore;
+export default LanguageStore;

@@ -1,5 +1,5 @@
 import './styles.scss';
-import { languageStore } from '../../../stores';
+import { algorithmStore } from '../../../../stores';
 
 export default function () {
   return {
@@ -7,9 +7,9 @@ export default function () {
       return (
         <div className="languages-list-left uk-nav uk-nav-default uk-nav-left">
           <ul className="uk-list uk-list-striped">
-              { languageStore.languages.map(language => {
-                return (<li><a href="#">{language}</a></li>);
-              }) }
+            { algorithmStore.algorithms.map(a => {
+              return (<li><a href="#">{a.name}</a></li>);
+            }) }
           </ul>
         </div>
       );

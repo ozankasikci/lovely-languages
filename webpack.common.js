@@ -49,6 +49,10 @@ module.exports = {
           ],
         },
       }],
+    },
+    {
+      test: /\.(txt|cpp|go)$/,
+      use: 'raw-loader',
     }],
   },
   plugins: [

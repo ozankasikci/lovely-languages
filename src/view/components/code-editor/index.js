@@ -1,18 +1,25 @@
 import './styles.scss';
-import { languageStore } from '../../../stores';
+import 'ace-builds';
+import 'ace-builds/webpack-resolver';
+import { toJS } from 'mobx';
+import { languages } from '../../../stores/language-store';
+import { algorithms } from '../../../stores/algorithm-store';
 
 export default function () {
   return {
     view: () => {
       return (
-        <ul className="languages-list-left uk-nav uk-nav-default uk-nav-left">
-          <ul className="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
-            { languageStore.languages.map(language => {
-              return (<li><a href="#">{language}</a></li>);
-            }) }
-          </ul>
-        </ul>
+        <div className="uk-child-width-1-2@m" uk-grid>
+          { languages.map((language, i) => {
+            const id = `editor-${language.extension}`;
+            return (<div key={i} id={id}>editor</div>);
+          }) }
+        </div>
       );
+    },
+    oncreate: () => {
+      const algorithm = algorithms[0];
+      algorithm.oncreate(algorithm.fileName);
     },
   };
 }
