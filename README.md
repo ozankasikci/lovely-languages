@@ -1,5 +1,5 @@
 # Lovely Languages
 
-Compare the languages at a glance!
+See all the languages for various algorithms at a glance!
 
-Why? Because i love all of them.
+Why? Because they are all lovely.
