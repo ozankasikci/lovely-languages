@@ -1,7 +1,3 @@
-# Bike Shop
+# Lovely Languages
 
-Starting Webpack Development Server:
-
-`yarn && yarn start`
-
-Go backend should be up and running.
+A place for programming languages to have some fun.
