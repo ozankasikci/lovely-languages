@@ -1,32 +1,5 @@
-import { observable, autorun, computed, action } from 'mobx';
-
-const languages = [
-  {
-    name: 'Javascript',
-    extension: 'txt',
-    aceMode: 'javascript',
-  },
-  {
-    name: 'C++',
-    extension: 'cpp',
-    aceMode: 'c_cpp',
-  },
-  {
-    name: 'GO',
-    extension: 'go',
-    aceMode: 'golang',
-  },
-  {
-    name: 'Python',
-    extension: 'py',
-    aceMode: 'python',
-  },
-  {
-    name: 'Java',
-    extension: 'java',
-    aceMode: 'java',
-  },
-];
+import { observable, autorun, action } from 'mobx';
+import languages from './data/language';
 
 class LanguageStore {
   @observable languages = languages;

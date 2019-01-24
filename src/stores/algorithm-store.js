@@ -1,26 +1,5 @@
 import { observable, autorun, toJS, computed, action } from 'mobx';
-import { languages } from './language-store';
-
-export const algorithms = [
-  {
-    name: 'Hello World',
-    fileName: 'hello-world',
-
-    oncreate: (fileName) => {
-      languages.forEach(language => {
-        const id = `editor-${language.extension}`;
-        ace.edit(id, {
-          maxLines: 50,
-          minLines: 10,
-          value: require(`../data/algorithm/${fileName}/${fileName}.${language.extension}`),
-          mode: `ace/mode/${language.aceMode}`,
-          theme: 'ace/theme/monokai',
-          bug: 1,
-        });
-      });
-    },
-  },
-];
+import algorithms from './data/algorithm';
 
 class AlgorithmStore {
   @observable algorithms = algorithms;

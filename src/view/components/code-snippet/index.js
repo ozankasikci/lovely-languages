@@ -1,7 +1,4 @@
 import './styles.scss';
-import 'ace-builds';
-import 'ace-builds/webpack-resolver';
-import { algorithms } from '../../../stores/algorithm-store';
 
 export default function () {
   return {
@@ -14,10 +11,6 @@ export default function () {
           <div className="uk-card-body" key={vnode.attrs.i} id={vnode.attrs.selector}>editor</div>
         </div>
       );
-    },
-    oncreate: () => {
-      const algorithm = algorithms[0];
-      algorithm.oncreate(algorithm.fileName);
     },
   };
 }

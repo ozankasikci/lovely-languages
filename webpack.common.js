@@ -1,6 +1,7 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const languages = require('./src/stores/data/language');
 
 module.exports = {
   context: resolve(__dirname, 'src'),
@@ -51,7 +52,7 @@ module.exports = {
       }],
     },
     {
-      test: /\.(txt|cpp|go|py|java|php|sh|ml)$/,
+      test: /\.(txt|cpp|go|py|java|php|sh|ml|cs|lua|coffee|c|d)$/,
       use: 'raw-loader',
     }],
   },
