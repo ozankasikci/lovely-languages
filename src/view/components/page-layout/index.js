@@ -12,7 +12,7 @@ export default function() {
       // m(Header),
       // m('div.spacer'),
       vnode.children,
-      m(Footer),
+      // m(Footer),
     ]),
   };
 }
