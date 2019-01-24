@@ -5,10 +5,15 @@ export default function () {
   return {
     view: () => {
       return (
-        <div className="languages-list-left uk-nav uk-nav-default uk-nav-left">
+        <div className="languages-list-left uk-nav uk-nav-primary uk-nav-left">
           <ul className="uk-list uk-list-striped">
             { algorithmStore.algorithms.map(a => {
-              return (<li><a href="#">{a.name}</a></li>);
+              return (<li><a href="#" onclick={
+                (e) => {
+                  e.preventDefault();
+                  algorithmStore.setAlgorithm(a.name);
+                }
+              }>{a.name}</a></li>);
             }) }
           </ul>
         </div>

@@ -1,6 +1,5 @@
 import './styles.scss';
-import 'ace-builds';
-import 'ace-builds/webpack-resolver';
+
 
 import { algorithmStore, languageStore } from '../../../stores';
 import CodeSnippet from '../code-snippet';
@@ -19,8 +18,8 @@ export default function () {
       );
     },
     oncreate: () => {
-      const algorithm = toJS(algorithmStore.algorithms)[0];
-      algorithm.oncreate(algorithm.fileName);
+      algorithmStore.createEditors();
+      algorithmStore.setEditorValues();
     },
   };
 }
