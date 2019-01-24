@@ -1,3 +1,5 @@
 # Lovely Languages
 
-A place for programming languages to have some fun.
+Compare the languages at a glance!
+
+Why? Because i love all of them.
