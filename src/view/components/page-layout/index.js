@@ -9,7 +9,7 @@ import './styles.scss';
 export default function() {
   return {
     view: (vnode) => m('#page-layout', [
-      // m(Header),
+      m(Header),
       // m('div.spacer'),
       vnode.children,
       // m(Footer),

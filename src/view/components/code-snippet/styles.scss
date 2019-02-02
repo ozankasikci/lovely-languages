@@ -2,3 +2,29 @@
   padding-top: 0;
   padding-bottom: 20px;
 }
+
+.uk-card-badge {
+	right: inherit;
+	left: 83px;
+	background: #1C1D19;
+	padding: 10px 21px;
+	border-radius: 3px;
+}
+
+.ace_content {
+	padding: 40px 0 10px 10px;
+}
+
+.ace_gutter-layer {
+	margin-top: 40px;
+}
+
+.uk-card-header .uk-card-badge  {
+	left: 40px;
+    right: inherit;
+    top: 40px;
+    background: #1C1D19;
+    padding: 5px 30px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

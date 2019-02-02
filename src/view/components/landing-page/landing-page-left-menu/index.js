@@ -5,8 +5,8 @@ export default function () {
   return {
     view: () => {
       return (
-        <div className="languages-list-left uk-nav uk-nav-primary uk-nav-left">
-          <ul className="uk-list uk-list-striped">
+        <div className="uk-height-1-1 languages-list-left uk-nav uk-nav-primary uk-nav-left">
+          <ul className="uk-list">
             { algorithmStore.algorithms.map(a => {
               return (<li><a href="#" onclick={
                 (e) => {

@@ -7,8 +7,8 @@ export default function() {
       return (
         <section className="uk-section uk-section-small uk-section-default uk-padding-remove-bottom uk-padding-remove-top"
           data-uk-filter="target: .js-filter">
-          <div className="uk-grid">
-            <div className="uk-width-auto"> <LandingPageListLeft/> </div>
+          <div className="uk-grid uk-height-viewport">
+            <div className="uk-width-auto uk-height-viewport"> <LandingPageListLeft/> </div>
             <div className="uk-width-expand"> <CodeEditor/> </div>
           </div>
         </section>

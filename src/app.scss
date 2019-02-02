@@ -1,1 +1,13 @@
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('./fonts/RobotoMono-Regular.ttf')  format('truetype')
+}
 
+body {
+	font-family: 'RobotoMono';
+	background: #3C3C3C;
+}
+
+.uk-section-default {
+	background: #3C3C3C;
+}

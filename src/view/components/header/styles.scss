@@ -1,16 +1,23 @@
 #site-head {
-  padding: 10px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  background-color: black;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  width: 100%;
+  height: 80px;
+  min-height: 80px;
+  background-color: #222222;
 }
 
-#logo {
-  min-width: 140px;
+.logo {
+  a {
+    font-size: 25px!important;
+    color: #FFFFFF!important;
+    font-family: 'RobotoMono' !important;
+  }
+}
+
+.uk-subnav a {
+  font-size: 18px;
+  &.active {
+    color: #C9CD18;
+  }
 }
 
 .custom-menu-item {

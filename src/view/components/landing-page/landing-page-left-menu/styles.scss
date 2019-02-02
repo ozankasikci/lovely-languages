@@ -1,3 +1,17 @@
 .languages-list-left {
   min-width: 200px;
+  background: #333;
+  ul {
+	padding: 20px;
+  	
+  	li {
+	    line-height: 2em;	
+  		a {
+  			color: #999;
+  			&:hover, &:active {
+  				color: #C9CD18;
+  			}
+  		}
+  	}
+  }
 }

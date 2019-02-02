@@ -8,8 +8,10 @@ export default function () {
           <div className="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid>
             <div className="uk-width-expand">
                 <ul className="uk-navbar-nav">
-                  <li className="uk-active">
-                    <a href="#" className="uk-logo" title=""><img id="logo" src="https://res.cloudinary.com/dyzghuz6m/image/upload/v1543021680/website-images/logo/logo.png" alt=""/></a>
+                  <li className="logo">
+                    <a href="#" title="">
+                      <span>Mithril Starter Kit</span>
+                    </a>
                   </li>
                 </ul>
             </div>
