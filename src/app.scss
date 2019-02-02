@@ -11,3 +11,7 @@ body {
 .uk-section-default {
 	background: #3C3C3C;
 }
+
+.uk-subnav>*>a:focus, .uk-subnav>*>a:hover {
+	color: #C9CD18!important;
+}
