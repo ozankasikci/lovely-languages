@@ -31,10 +31,12 @@ class AlgorithmStore {
         minLines: 10,
         fontSize: 14,
         showPrintMargin: false,
+        highlightGutterLine: false,
         showLineNumbers: false,
+        highlightActiveLine: false,
         showGutter: false,
         mode,
-        theme: 'ace/theme/monokai',
+        theme: 'ace/theme/gruvbox',
         bug: 1,
       });
 
@@ -47,8 +49,7 @@ class AlgorithmStore {
       const { language } = editor;
       const { fileName } = this.selectedAlgorithm;
       const code = require(`../algorithms/${fileName}/${fileName}.${language.extension}`);
-      editor.instance.setValue(code);
-      editor.instance.clearSelection();
+      editor.instance.setValue(code, 1);
     });
   }
 }

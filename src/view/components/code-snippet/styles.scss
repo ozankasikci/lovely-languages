@@ -1,30 +1,45 @@
+.uk-card {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .uk-card-body {
   padding-top: 0;
-  padding-bottom: 20px;
+  border-radius: 5px !important;
+  padding-bottom: 50px;
 }
 
 .uk-card-badge {
-	right: inherit;
-	left: 83px;
-	background: #1C1D19;
-	padding: 10px 21px;
-	border-radius: 3px;
+  right: inherit;
+  left: 83px;
+  background: #1C1D19;
+  padding: 10px 21px;
+  border-radius: 3px;
+}
+
+.ace_scroller {
+  border-radius: 5px !important;
+  margin-top: 40px;
+}
+
+.uk-card-header .uk-card-badge {
+  border-radius: 5px !important;
 }
 
 .ace_content {
-	padding: 40px 0 10px 15px;
+  padding: 0 0 10px 15px;
 }
 
 .ace_gutter-layer {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
 .uk-card-header .uk-card-badge  {
-	left: 40px;
-    right: inherit;
-    top: 40px;
-    background: #1C1D19;
-    padding: 5px 30px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+  left: 20px;
+  right: inherit;
+  top: 40px;
+  background: #1C1D19;
+  padding: 5px 30px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
