@@ -1,6 +1,11 @@
-/* Import all vendor.scss / css here[e.g. Import 'font-awesome/scss/font-awesome.scss';] */
+import 'ace-builds/src-min-noconflict/ace';
 import { Routes, DefaultRoute } from './view/routes';
 
+const CDN = 'https://cdn.jsdelivr.net/npm/ace-builds@1.4.2/src-min-noconflict';
+ace.config.set('basePath', CDN);
+ace.config.set('modePath', CDN);
+ace.config.set('themePath', CDN);
+ace.config.set('workerPath', CDN);
 
 import { configure as mobxConfigure } from 'mobx';
 mobxConfigure({ enforceActions: 'observed' });

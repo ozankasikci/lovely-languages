@@ -1,5 +1,3 @@
-import 'ace-builds';
-import 'ace-builds/webpack-resolver';
 import { observable, autorun, toJS, computed, action } from 'mobx';
 import algorithms from './data/algorithm';
 import languages from './data/language';
