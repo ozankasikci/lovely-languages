@@ -15,7 +15,7 @@ export default function () {
           href="#"
           onclick={e => {
             e.preventDefault();
-            languageStore.selectedAllLanguages = true;
+            languageStore.selectedAllLanguages = !languageStore.selectedAllLanguages;
           }}
         >All</a>
       ];
@@ -23,7 +23,7 @@ export default function () {
       const buttons = languageButtons.concat(
         languageStore.languages.map((language, i) => {
           return (<a
-            className={`uk-category-btn uk-button uk-button-default ${languageStore.selectedAllLanguages ? '' : languageStore.selectedLanguages.includes(language.name) && 'active'}`}
+            className={`uk-category-btn uk-button uk-button-default ${languageStore.selectedAllLanguages ? 'active' : languageStore.selectedLanguages.includes(language.name) && 'active'}`}
             href="#"
             onclick={e => {
               e.preventDefault();
