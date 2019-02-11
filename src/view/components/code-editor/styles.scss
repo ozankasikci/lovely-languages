@@ -9,9 +9,13 @@
   padding: 5px 21px;
   margin-top: 10px;
 
-  &:hover, &:focus {
+  &:hover {
     background: #333;
     color: #C9CD18;
+  }
+
+  &:focus {
+    color: #fff;
   }
 
   &.active{

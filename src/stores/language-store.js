@@ -4,7 +4,7 @@ import languages from './data/language';
 class LanguageStore {
   @observable languages = languages;
   @observable selectedAllLanguages = true;
-  @observable selectedLanguage = false;
+  @observable selectedLanguages = [];
 }
 
 export { languages };
