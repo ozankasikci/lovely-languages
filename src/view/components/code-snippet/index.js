@@ -4,7 +4,7 @@ export default function () {
   return {
     view: (vnode) => {
       return (
-        <div className="uk-card">
+        <div className={`uk-card ${vnode.attrs.classNames}`}>
           <div className="uk-card-header">
             <div className="uk-card-badge uk-label">{vnode.attrs.languageName}</div>
           </div>

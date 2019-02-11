@@ -47,7 +47,7 @@ export default function () {
             { languageStore.languages.map((language, i) => {
               const className = languageStore.selectedLanguages.includes(language.name) || allLanguagesActive ? '' : 'uk-hidden';
               const id = `editor-${language.extension}`;
-              return (<div className={className}><CodeSnippet languageName={language.name} selector={id} i={i}/></div>) ;
+              return (<CodeSnippet classNames={className} languageName={language.name} selector={id} i={i}/>) ;
             })}
           </div>
         </div>
