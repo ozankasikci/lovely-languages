@@ -15,7 +15,7 @@ export default function () {
             e.preventDefault();
             languageStore.selectedAllLanguages = !languageStore.selectedAllLanguages;
           }}
-        >All</a>
+        >All</a>,
       ];
 
       const buttons = languageButtons.concat(
