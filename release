@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+cd $(dirname $0)/..
+
+DATE=$(date '+%Y-%m-%d %H:%M:%S')
+
+yarn build
+cd dist
+git init
+git remote add ghpages git@github.com:ozankasikci/lovely-languages.github.io.git || true
+git add .
+git commit -m "new release, ${DATE}"
+git push ghpages master --force
+
+
+
