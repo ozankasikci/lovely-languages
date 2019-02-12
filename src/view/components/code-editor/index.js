@@ -7,8 +7,6 @@ export default function () {
     view: () => {
       const allLanguagesActive = languageStore.selectedAllLanguages ? 'active' : '';
 
-      const languagesList  = languageStore.selectedAllLanguages ? languageStore.languages : languageStore.languages
-
       const languageButtons = [
         <a
           className={`uk-category-btn uk-button uk-button-default ${allLanguagesActive}`}
@@ -27,16 +25,16 @@ export default function () {
             href="#"
             onclick={e => {
               e.preventDefault();
-              languageStore.selectedAllLanguages = false
+              languageStore.selectedAllLanguages = false;
               
               if (!languageStore.selectedLanguages.includes(language.name)) {
-                languageStore.selectedLanguages.push(language.name)
+                languageStore.selectedLanguages.push(language.name);
               } else {
-                const langIndex = languageStore.selectedLanguages.findIndex(lang => lang === language.name)
-                languageStore.selectedLanguages.splice(langIndex, 1)
+                const langIndex = languageStore.selectedLanguages.findIndex(lang => lang === language.name);
+                languageStore.selectedLanguages.splice(langIndex, 1);
               }
             }
-          }
+            }
           >{language.name}</a>);
         }));
 
@@ -47,7 +45,7 @@ export default function () {
             { languageStore.languages.map((language, i) => {
               const className = languageStore.selectedLanguages.includes(language.name) || allLanguagesActive ? '' : 'uk-hidden';
               const id = `editor-${language.extension}`;
-              return (<CodeSnippet classNames={className} languageName={language.name} selector={id} i={i}/>) ;
+              return (<CodeSnippet classNames={className} languageName={language.name} selector={id} i={i}/>);
             })}
           </div>
         </div>
@@ -55,6 +53,9 @@ export default function () {
     },
     oncreate: () => {
       algorithmStore.createEditors();
+      algorithmStore.setEditorValues();
+    },
+    onremove: () => {
       algorithmStore.setEditorValues();
     },
   };

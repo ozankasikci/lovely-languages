@@ -1,7 +1,6 @@
-import { observable, autorun, toJS, computed, action } from 'mobx';
+import { observable, action } from 'mobx';
 import algorithms from './data/algorithm';
 import languages from './data/language';
-import isEmpty from 'lodash/isEmpty';
 
 class AlgorithmStore {
   @observable algorithms = algorithms;
@@ -14,9 +13,7 @@ class AlgorithmStore {
   }
 
   @action createEditors = () => {
-    if (!isEmpty(this.editors)) {
-      return;
-    }
+    this.editors = [];
 
     this.editors = languages.map(language => {
       const mode = `ace/mode/${language.aceMode}`;
