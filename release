@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
-cd $(dirname $0)/..
+cd $(dirname $0)
 
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
