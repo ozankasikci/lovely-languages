@@ -1,9 +1,11 @@
 # compiled output
+/build
 /dist
 
 # dependencies
 /node_modules
 /bower_components
+/local_scripts
 
 # misc
 .sass-cache
