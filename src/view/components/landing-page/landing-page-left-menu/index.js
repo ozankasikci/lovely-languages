@@ -9,13 +9,17 @@ export default function () {
           <ul className="uk-list">
             { algorithmStore.algorithms.map(a => {
               return (<li><a href="#" 
-              className={algorithmStore.selectedAlgorithm.name === a.name ? 'active' : ''}
-              onclick={
-                (e) => {
-                  e.preventDefault();
-                  algorithmStore.setAlgorithm(a.name);
-                }
-              }>{a.name}</a></li>);
+                className={algorithmStore.selectedAlgorithm.name === a.name ? 'active' : ''}
+                onclick={
+                  (e) => {
+                    e.preventDefault();
+                    algorithmStore.setAlgorithm(a.name);
+
+                    if (m.route.get() !== '/index') {
+                      m.route.set('#!/index');
+                    }
+                  }
+                }>{a.name}</a></li>);
             }) }
           </ul>
         </div>

@@ -4,8 +4,6 @@ import PageLayout from './components/page-layout';
 import IndexPage from './pages/landing-page';
 import AboutPage from './pages/about';
 
-const $root = document.body.querySelector('#root');
-
 const Routes = {
   '/index': {
     render() {
