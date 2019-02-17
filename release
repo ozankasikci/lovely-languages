@@ -5,6 +5,7 @@ cd $(dirname $0)
 DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
 yarn build
+cp CNAME dist/CNAME
 cd dist
 git init
 git remote add ghpages git@github.com:ozankasikci/lovely-languages.github.io.git || true
