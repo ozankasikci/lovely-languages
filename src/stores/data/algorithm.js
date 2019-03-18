@@ -11,4 +11,9 @@ module.exports = [
     name: 'Factorial',
     fileName: 'factorial',
   },
+
+  {
+    name: 'Binary Search',
+    fileName: 'binary-search',
+  },
 ];
