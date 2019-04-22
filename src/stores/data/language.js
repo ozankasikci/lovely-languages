@@ -39,4 +39,9 @@ module.exports = [
     extension: 'lua',
     aceMode: 'lua',
   },
+  {
+    name: 'Rust',
+    extension: 'rs',
+    aceMode: 'rust',
+  },
 ];

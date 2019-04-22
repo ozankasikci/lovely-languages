@@ -52,7 +52,7 @@ module.exports = {
       }],
     },
     {
-      test: /\.(txt|cpp|go|py|java|php|sh|ml|cs|lua|coffee|c|d)$/,
+      test: /\.(txt|cpp|go|py|java|php|sh|ml|cs|lua|coffee|c|rs|d)$/,
       use: 'raw-loader',
     }],
   },
