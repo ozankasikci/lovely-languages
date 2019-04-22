@@ -44,4 +44,9 @@ module.exports = [
     extension: 'rs',
     aceMode: 'rust',
   },
+  {
+    name: 'Clojure',
+    extension: 'clj',
+    aceMode: 'clojure',
+  },
 ];
