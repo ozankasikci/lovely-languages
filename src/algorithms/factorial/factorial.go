@@ -11,7 +11,7 @@ func factorial(x uint) uint {
 }
 
 func main() {
-	x := uint(1000)
+	x := uint(10)
 	calcFactorial := factorial(x)
 	fmt.Println(calcFactorial)
 }
