@@ -10,7 +10,7 @@ export default function () {
               <ul className="uk-navbar-nav">
                 <li className="logo">
                   <a href="#" title="">
-                    <span>Lovely Languages</span>
+                    <span>LOVELY LANGUAGES (A tool to compare languages at a glance)</span>
                   </a>
                 </li>
               </ul>
