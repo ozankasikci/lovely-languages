@@ -42,7 +42,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "ace-builds": "^1.4.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "mithril": "^1.1.6",
     "mobx": "^5.5.2",
     "raw-loader": "^1.0.0"
